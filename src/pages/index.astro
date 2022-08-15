@@ -1,5 +1,9 @@
 ---
 import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+
+const filesInDir = await fs.readdir("./public/assets/auto-thumbnails");
+
 ---
 
 <Layout title="Chris Customz">
@@ -25,127 +29,18 @@ import Layout from '../layouts/Layout.astro';
 			<h3 class="open-sauce-bold" style="font-size: 40px; color: #000000;">
 				My Art
 			</h3>
+			<p class="open-sauce" style="font-size: 25px; color: #000000;">
+				Click on an image to surf my gallery!
+			</p>
 			<div id="designs" class="uk-child-width-1-4@m" uk-grid uk-lightbox="animation: scale">
+				{filesInDir.map((image) =>
 				<div>
-					<a class="uk-inline" href="assets/drawings/1-66Joker.png" data-caption="Caption 1">
-						<img src="assets/thumbnails/1-66Joker.png" alt="">
+					<a class="uk-inline" href={`/assets/auto-large/${image.replace("jpg", "png" )}`}
+						data-caption="Caption 1">
+						<img src={`/assets/auto-thumbnails/${image}`} alt="">
 					</a>
 				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/2-abstract2.png" data-caption="Caption 2">
-						<img src="assets/thumbnails/2-abstract2.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/3-Copy of Batgirl.png" data-caption="Caption 3">
-						<img src="assets/thumbnails/3-Copy of Batgirl.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/4-Copy of Catwoman.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/4-Copy of Catwoman.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/5-Copy of Charlie.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/5-Copy of Charlie.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/6-Copy of Fate.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/6-Copy of Fate.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/7-Copy of galactusE.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/7-Copy of galactusE.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/8-Copy of Hearteyes.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/8-Copy of Hearteyes.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/9-Copy of Iron manE.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/9-Copy of Iron manE.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/10-Copy of janeThor Edit.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/10-Copy of janeThor Edit.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/11-Copy of Kakashi.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/11-Copy of Kakashi.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/12-Copy of King Shark.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/12-Copy of King Shark.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/13-Copy of MilesE.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/13-Copy of MilesE.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/14-Copy of ww.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/14-Copy of ww.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/15-Manta.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/15-Manta.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/16-pennywise.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/16-pennywise.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/17-Ragnarok.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/17-Ragnarok.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/18-scary joker.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/18-scary joker.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/19-Space Kook.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/19-Space Kook.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/20-The Batman.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/20-The Batman.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/21-The RiddlerT.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/21-The RiddlerT.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/22-To The Batman.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/22-To The Batman.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/23-Weed.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/23-Weed.png" alt="">
-					</a>
-				</div>
-				<div>
-					<a class="uk-inline" href="assets/drawings/24-ww.png" data-caption="Caption 4">
-						<img src="assets/thumbnails/24-ww.png" alt="">
-					</a>
-				</div>
+				)}
 			</div>
 		</div>
 	</div>
