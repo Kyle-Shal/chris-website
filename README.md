@@ -1,2 +1,12 @@
-# photography
-This HTML5 website template is part of a series of templates I am open sourcing. Website is completely responsive and is capable of sending mails (I have included a simple PHP mailer script). This is available for anyone to use both commercially or non-commercially. Credits would be much appreciated. For live demo : http://www.yomeshgupta.com/demos/photography/index.html
+# Chris Website
+
+## Commands
+
+| Command                | Action                                             |
+| :--------------------- | :------------------------------------------------- |
+| `npm install`          | Installs dependencies                              |
+| `npm run dev`          | Starts local dev server at `localhost:3000`        |
+| `npm run build`        | Build your production site to `./dist/`            |
+| `npm run preview`      | Preview your build locally, before deploying       |
+| `npm run astro ...`    | Run CLI commands like `astro add`, `astro preview` |
+| `npm run astro --help` | Get help using the Astro CLI                       |

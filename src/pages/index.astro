@@ -1,0 +1,71 @@
+---
+import Layout from '../layouts/Layout.astro';
+import fs from 'node:fs/promises';
+
+const filesInDir = await fs.readdir("./public/assets/auto-thumbnails");
+
+---
+
+<Layout title="Chris Customz">
+	<!-- Header Section -->
+	<div class="uk-section header">
+		<div class="uk-container uk-text-left@s" data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+			<div data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 200">
+				<div class="uk-flex uk-flex-column uk-width-1-1">
+					<h1 class="tt-norms-bold" style="color: #000000; font-size: 50px;">Hi, <br>
+						I'm Chris Pickwoad
+					</h1>
+				</div>
+			</div>
+		</div>
+		<div class="uk-position-bottom-center uk-position-z-index uk-text-center" style="margin-bottom: 50px;">
+			<a href="#content" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
+		</div>
+	</div>
+
+	<!-- My Designs section -->
+	<div id="content" class="uk-section tertiary-color-background">
+		<div class="uk-container uk-light">
+			<h3 class="open-sauce-bold" style="font-size: 40px; color: #000000;">
+				My Art
+			</h3>
+			<p class="open-sauce" style="font-size: 25px; color: #000000;">
+				Click on an image to surf my gallery!
+			</p>
+			<div id="designs" class="uk-child-width-1-4@m" uk-grid uk-lightbox="animation: scale">
+				{filesInDir.map((image) =>
+				<div>
+					<a class="uk-inline" href={`/assets/auto-large/${image.replace("jpg", "png" )}`}
+						data-caption="Caption 1">
+						<img src={`/assets/auto-thumbnails/${image}`} alt="">
+					</a>
+				</div>
+				)}
+			</div>
+		</div>
+	</div>
+
+
+	<!-- FOOTER -->
+	<footer class="uk-section uk-padding-remove-bottom tertiary-color-background">
+		<div class="uk-container">
+			<div class="uk-grid uk-grid-large" data-uk-grid>
+				<div class="uk-width-1-2@m">
+					<h3>Chrissy P</h3>
+					<p>Contact Me:<a href="#" title="">chrispickwoad@gmail.com</a></p>
+					<div>
+						<a href="https://ca.linkedin.com/company/c-core" class="uk-icon-button"
+							data-uk-icon="linkedin"></a>
+						<a href="" class="uk-icon-button" data-uk-icon="facebook"></a>
+						<a href="https://twitter.com/ccore1975" class="uk-icon-button" data-uk-icon="twitter"></a>
+					</div>
+				</div>
+			</div>
+			<!-- COPYRIGHT -->
+			<div class=" uk-padding  uk-text-center uk-padding-remove-horizontal">
+				<span class="uk-text-small  uk-text-muted">© Kyle Shal 2022 <a href="http://kyleshal.com"
+						title="Visit Kyle's site" target="_blank" data-uk-tooltip></span>
+			</div>
+		</div>
+	</footer>
+</Layout>
