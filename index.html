@@ -1,102 +1,184 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        <title>
-            Photography | Yomesh Gupta
-        </title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <meta author="Yomesh Gupta">
-        <meta title="HTML5 Website Template by Yomesh Gupta">
-        <meta description="This HTML5 website template is part of a series of templates I am open sourcing. Website is completely responsive. This is available for anyone to use both commercially or non-commercially. Credits would be much appreciated.">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-        <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400|Roboto:400,700|Lato:100,300,400,300i" rel="stylesheet">
-        <link rel="stylesheet" href="http://code.ionicframework.com/ionicons/2.0.1/css/ionicons.min.css">
-        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.3/css/justifiedGallery.min.css" />
-        <link rel="stylesheet" type="text/css" href="css/grid.css">
-        <link rel="stylesheet" type="text/css" href="css/style.min.css">
-        <link rel="stylesheet" type="text/css" href="css/queries.min.css">
-    </head>
-    <body>
-        <div class="wrapper">
-            <div class="main-loader"></div>
-            <div class="span-3-of-4 box" id="viewer">
-                <div class="viewer-options">
-                    <i class="ion-arrow-expand expand-viewer"></i>
-                    <i class="ion-arrow-shrink shrink-viewer hide"></i>
-                    <i class="ion-close-round hide close-btn"></i>
-                </div>
-                <div class="loader"></div>
-                <div class="viewer-title">Tired of looking out? Break free.</div>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Chris Customz</title>
+		<link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/uikit/dist/css/uikit.min.css">
+    <link rel="stylesheet" type="text/css" href="css/custom.css">
+    <link rel="icon" href="assets/CCORE - favecon.png">
+    <script src="https://cdn.jsdelivr.net/npm/uikit/dist/js/uikit.min.js"></script>
+		<script src="https://cdn.jsdelivr.net/npm/uikit/dist/js/uikit-icons.min.js"></script>
+  </head>
+  <body>
+    <!-- Header Section --> 
+    <div class="uk-section header">
+      <div class="uk-container uk-text-left@s"  data-uk-parallax="y: 0,50; easing:0; opacity:0.2">
+        <div data-uk-scrollspy="cls: uk-animation-slide-right-medium; target: > *; delay: 200">
+          <div class="uk-flex uk-flex-column uk-width-1-1" >
+              <h1 class="tt-norms-bold" style="color: #000000; font-size: 50px;" >Hi, <br>
+			I'm Chris Pickwoad
+				</h1>
             </div>
-            <div class="span-1-of-4 box"  id="information">
-                <header>
-                    <h2>Hello</h2>
-                    <h3>I'm Chris Pickwoad</h3>
-                    <ul class="social-links">
-                        <li><a href="#" target="_blank"><i class="ion-social-facebook"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ion-social-googleplus"></i></a></li>
-                        <li><a href="https://www.inunite.com" target="_blank"><i class="ion-heart"></i></a></li>
-                        <li><a href="#" target="_blank"><i class="ion-social-twitter"></i></a></li>
-                        <li><a href="https://github.com/yomeshgupta/photography" target="_blank"><i class="ion-social-github"></i></a></li>
-                    </ul>
-                </header>
-                <div id="thumbnails" class="thumbnails">
-                    <a>
-                        <img src="img/thumb/Ragnarok.png" data-large-img="img/thumb/Ragnarok.png" class="img-thumb" data-title="Tired of looking out? Break free."/>
-                    </a>
-                    <a>
-                        <img src="img/thumb/Weed.png" data-large-img="img/thumb/Weed.png class="img-thumb" data-title="Dressing up for the jungle!" />
-                    </a>
-                    <a>
-                        <img src="img/thumb/Copy of MilesE.png" data-large-img="img/thumb/Copy of MilesE.png" class="img-thumb" data-title="Akshardham Temple" />
-                    </a>
-                    <a>
-                        <img src="img/thumb/Copy of Fate.png" data-large-img="img/thumb/Copy of Fate.png" class="img-thumb" data-title="Age is just a number!"/>
-                    </a>
-                    <!-- <a>
-                        <img src="img/thumb/image-3.jpg" data-large-img="img/large/image-3.jpg" class="img-thumb" data-title="Travel Goals" />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-4.jpg" data-large-img="img/large/image-4.jpg" class="img-thumb" data-title="Pretty pretty!" />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-6.jpg" data-large-img="img/large/image-6.jpg" class="img-thumb" data-title="Travel Solo. Travel is life." />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-7.jpg" data-large-img="img/large/image-7.jpg" class="img-thumb" data-title="Music is the universal language." />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-9.jpg" data-large-img="img/large/image-9.jpg" class="img-thumb" data-title="Age is just a number." />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-10.jpg" data-large-img="img/large/image-10.jpg" class="img-thumb" data-title="Partyyyyy!" />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-11.jpg" data-large-img="img/large/image-11.jpg" class="img-thumb" data-title="Food is bae." />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-12.jpg" data-large-img="img/large/image-12.jpg" class="img-thumb" data-title="Let us shoot." />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-13.jpg" data-large-img="img/large/image-13.jpg" class="img-thumb" data-title="Winter is coming!" />
-                    </a>
-                    <a>
-                        <img src="img/thumb/image-14.jpg" data-large-img="img/large/image-14.jpg" class="img-thumb" data-title="Aren't we all lost stars?" />
-                    </a> -->
-                </div>
-                <footer>
-                    <p class="last-text">Copyright &copy; 2016 by <a href="http://www.yomeshgupta.com" target="_blank">Yomesh Gupta.</a><br/>All rights reserved.
-                    <a href="https://github.com/yomeshgupta/photography">Download theme</a>.</p>
-                </footer>
-            </div>
-            <div style="clear:both;"></div>
         </div>
-    </body>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/respond/1.4.2/respond.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/html5shiv/3.7.3/html5shiv.min.js"></script>
-    <script type="text/javascript" src="https://cdn.jsdelivr.net/selectivizr/1.0.3b/selectivizr.min.js"></script>
-    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/justifiedGallery/3.6.3/js/jquery.justifiedGallery.min.js"></script>
-   <script type="text/javascript" src="js/script.min.js"></script>
-<!--<script type="text/javascript" src="js/script.js"></script>-->
+       </div>
+	   <div class="uk-position-bottom-center uk-position-z-index uk-text-center" style="margin-bottom: 50px;">
+			<a href="#content" data-uk-scroll="duration: 500" data-uk-icon="icon: arrow-down; ratio: 2"></a>
+		</div>
+      </div>
+
+    <!-- My Designs section -->
+    <div id="content" class="uk-section tertiary-color-background">
+      <div class="uk-container uk-light">
+          	<h3 class="open-sauce-bold" style="font-size: 40px; color: #000000;">
+            My Art
+			</h3>
+				<div id="designs"  class="uk-child-width-1-4@m" uk-grid uk-lightbox="animation: scale">
+					<div>
+						<a class="uk-inline" href="assets/drawings/1-66Joker.png" data-caption="Caption 1">
+							<img src="assets/thumbnails/1-66Joker.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/2-abstract2.png" data-caption="Caption 2">
+							<img src="assets/thumbnails/2-abstract2.png"  alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/3-Copy of Batgirl.png" data-caption="Caption 3">
+							<img src="assets/thumbnails/3-Copy of Batgirl.png"  alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/4-Copy of Catwoman.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/4-Copy of Catwoman.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/5-Copy of Charlie.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/5-Copy of Charlie.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/6-Copy of Fate.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/6-Copy of Fate.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/7-Copy of galactusE.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/7-Copy of galactusE.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/8-Copy of Hearteyes.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/8-Copy of Hearteyes.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/9-Copy of Iron manE.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/9-Copy of Iron manE.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/10-Copy of janeThor Edit.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/10-Copy of janeThor Edit.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/11-Copy of Kakashi.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/11-Copy of Kakashi.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/12-Copy of King Shark.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/12-Copy of King Shark.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/13-Copy of MilesE.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/13-Copy of MilesE.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/14-Copy of ww.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/14-Copy of ww.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/15-Manta.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/15-Manta.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/16-pennywise.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/16-pennywise.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/17-Ragnarok.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/17-Ragnarok.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/18-scary joker.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/18-scary joker.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/19-Space Kook.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/19-Space Kook.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/20-The Batman.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/20-The Batman.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/21-The RiddlerT.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/21-The RiddlerT.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/22-To The Batman.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/22-To The Batman.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/23-Weed.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/23-Weed.png" alt="">
+						</a>
+					</div>
+					<div>
+						<a class="uk-inline" href="assets/drawings/24-ww.png" data-caption="Caption 4">
+							<img src="assets/thumbnails/24-ww.png" alt="">
+						</a>
+					</div>
+				</div>
+      </div>
+    </div>
+
+
+    <!-- FOOTER -->
+		<footer class="uk-section uk-padding-remove-bottom tertiary-color-background">
+			<div class="uk-container">
+				<div class="uk-grid uk-grid-large" data-uk-grid>
+					<div class="uk-width-1-2@m">
+						<h3>Chrissy P</h3>
+						<p>Contact Me:<a href="#" title="">chrispickwoad@gmail.com</a></p>
+						<div>
+							<a href="https://ca.linkedin.com/company/c-core" class="uk-icon-button" data-uk-icon="linkedin"></a>
+							<a href="" class="uk-icon-button" data-uk-icon="facebook"></a>
+							<a href="https://twitter.com/ccore1975" class="uk-icon-button" data-uk-icon="twitter"></a>
+						</div>
+					</div>
+				</div>
+				<!-- COPYRIGHT -->		
+				<div class=" uk-padding  uk-text-center uk-padding-remove-horizontal">
+					<span class="uk-text-small  uk-text-muted">© Kyle Shal 2022 <a href="http://kyleshal.com" title="Visit Kyle's site" target="_blank" data-uk-tooltip></span>
+				</div>
+			</div>
+		</footer>
+  </body>
 </html>

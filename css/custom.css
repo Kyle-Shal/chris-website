@@ -1,0 +1,150 @@
+/* IDs */
+#arrow{
+  color: #d6bca0;
+}
+#arrow:hover {
+  color: #fff;
+}
+
+#attribution span{
+  color: #2f5972;
+}
+
+#designs img{
+  border-radius: 20px;
+}
+
+/* Modifying Classes */
+.border{
+    border-radius: 20px;
+}
+.position-center{
+    position: absolute;
+    left: 100px;
+  }
+
+.center-img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+  }
+
+  .light-grey-section{
+    background: #e4e4e4;
+  }
+  .light-blue-text{
+    color: #002832;
+  }
+
+
+/* Custom Components */
+.header {
+  padding-top: 30px;
+  padding-bottom: 20px;
+  background:  url("../assets/Fate-header.png");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  color: #fff;
+  min-height: 700px;
+}
+.header-button{
+  border-radius: 25px; 
+  margin-top: 15px;
+  margin-bottom: 50px;
+}
+
+/* UI-KIT Modified Components */
+.uk-container{
+  max-width: 1200px;
+}
+
+.uk-subnav-pill>.uk-active>a {
+  background-color: #2f5972;
+  color: #fff;
+}
+
+.uk-section-primary:not(.uk-preserve-color) .uk-button-default{
+  background-color: #ffe1c1;
+  color: #fff;
+  border-color: rgba(255,255,255,.7);
+}
+
+
+.uk-button-default{
+  background-color: #ffe1c1;
+  color: #fff;
+  border-color: rgba(255,255,255,.7);
+}
+/* FONTS */
+
+@font-face {
+	font-family: 'TT-Norms';
+	src: url(/fonts/TT-Norms-sv/TTNorms-Regular.otf);
+	font-style: normal;
+	font-weight: 100;
+}
+@font-face {
+	font-family: 'TT-Norms-Bold';
+	src: url(/fonts/TT-Norms-sv/TTNorms-Bold.otf);
+	font-style: normal;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Open-Sauce';
+	src: url(/fonts/Open-Sauce/OpenSauceSans-Regular.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+
+@font-face {
+	font-family: 'Open-Sauce-Bold';
+	src: url(/fonts/Open-Sauce/OpenSauceSans-Bold.ttf);
+	font-style: normal;
+	font-weight: 100;
+}
+
+.tt-norms{
+	font-family: TT-Norms;
+  color: white;
+}
+.tt-norms-bold{
+	font-family: TT-Norms-Bold;
+	font-size: 50px;
+}
+
+.open-sauce{
+  font-family: Open-Sauce;
+	font-size: 22px;
+}
+
+.open-sauce-bold{
+  font-family: Open-Sauce-Bold;
+	font-size: 22px;
+}
+
+/* Colors d6bca0 */
+.primary-color{
+  color: #ffe1c1;
+}
+
+.secondary-color{
+  color: #2f5972;
+}
+
+.primary-color-background{
+  background-color: #ffe1c1;
+}
+
+.secondary-color-background{
+  background-color: #2f5972;
+}
+
+.tertiary-color-background{
+  background-color: #ffffff;
+  /* background-color: #2c2f33;2c2f33 */
+
+}
+
