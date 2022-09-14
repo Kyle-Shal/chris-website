@@ -1,5 +1,9 @@
 # Chris Website
 
+Digital art gallery for Chris Pickwoad's Drawings.
+
+Built using [Astro](https://astro.build/) and [UIkit](https://getuikit.com/).
+
 ## Commands
 
 | Command                | Action                                             |
